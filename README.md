@@ -4,15 +4,16 @@
 'ROS 공식 위키' 와 'ROS 로봇 프로그래밍 기초 개념부터 프로그래밍 학습, 실제 로봇에 적용까지'에 내용에서 Ubuntu 18.04 환경에서 ROS Melodic 설치에 필요한 부분을 정리한 글입니다.
 
 ***
-## 기타 설정
-### ifconfig 사용하기(자신의 아이피를 확인 해야 할때 사용)
+# 기타 설정
+***
+### ifconfig 명령어 사용하기(자신의 아이피를 확인 할때 사용)
 `$ sudo apt install net-tools`
 
-### NTP 설정
+### NTP 설정 하기
 `$ sudo apt install -y chrony ntpdate`
 `$ sudo ntpdate -q ntp.ubuntu.com`
 ***
-## ROS 설치 시작
+# ROS 설치 시작
 ### 소스 리스트 추가
 `$ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
 
@@ -72,4 +73,4 @@ alias cs='cd ~/catkin_ws/src'
 alias cm='cd ~/catkin_ws && catkin_make'
 ~~~
 ### 현재 열려있는 터미널에 설정 방영
-$ source ~/.bashrc
+`$ source ~/.bashrc`
